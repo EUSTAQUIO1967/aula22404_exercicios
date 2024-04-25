@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <h1 class="ml-3" style="padding-left: 3rem;">Lista de tarefas</h1>
+        </a>
+      </nav>
+    </header>
+    <div class="container">
+    <main>
+      <section id="app">
+        
+        <form action="" name="formulario">
+          <fieldset>
+
+          
+          <div class="form-group">
+            <label for="tarefa">Tarefa</label>
+            <input class="form-control" type="text" name="tarefa" id="tarefa" placeholder="Descreva a tarefa">
+            
+          </div>
+          
+          <button class="btn btn-primary mt-2" bt-incluir >Incluir Tarefa</button>
+        </fieldset>
+        </form>
+
+        <div id="lista tarefas" class="mt-2">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Descrição da Tarefa</th>
+                <th>Estado</th>
+              </tr>
+              <tbody class="listaTarefas">
+                
+              </tbody>
+          
+            </thead>
+          </table>
+
+
+        </div>
+      </section>
+    </main>
+  </div>    
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
